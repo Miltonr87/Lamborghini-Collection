@@ -14,7 +14,7 @@ function Header () {
         </IconButton>
         
             <img className="header__logo"
-            src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo-500x281.png" alt="Tinder logo" />
+            src="https://cdn.pixabay.com/photo/2012/04/26/13/58/playboy-42527_960_720.png" alt="Tinder logo" />
             
         <IconButton>
         <ForumIcon className="header__icon" fontSize="large" /> 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TinderCards from "react-tinder-card";
+import './TinderCard.css';
 
 // Array of objects come from react-tinder-card
 
@@ -20,8 +21,8 @@ function TinderCard() {
   return (
     <div>
       <h1>Tinder Card</h1>
-
-      {people.map((person) => (
+        <div className="tinderCards__cardContainer">
+        {people.map((person) => (
         <TinderCards
           className="swipe"
           key={person.name}
@@ -35,6 +36,7 @@ function TinderCard() {
           </div>
         </TinderCards>
       ))}
+        </div>
     </div>
   );
 }

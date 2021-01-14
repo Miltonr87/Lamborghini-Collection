@@ -10,6 +10,13 @@
     box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
 }
 
+.card > h3 {
+    position: absolute;
+    color: white;
+    bottom: 1.3rem;
+    text-align: center;
+}
+
 .tinderCards__cardContainer {
     display: flex;
     justify-content: center;
@@ -19,3 +26,5 @@
 .swipe {
     position: absolute;
 }
+
+

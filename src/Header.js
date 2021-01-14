@@ -10,14 +10,14 @@ function Header () {
         <div className="header">
 
         <IconButton>
-        <PersonIcon className="header__icon" fontSize="large" />
+        <PersonIcon className="header__icon" fontSize="large" style={{ color: 'black' }} />
         </IconButton>
         
             <img className="header__logo"
             src="https://cdn.pixabay.com/photo/2012/04/26/13/58/playboy-42527_960_720.png" alt="Tinder logo" />
             
         <IconButton>
-        <ForumIcon className="header__icon" fontSize="large" /> 
+        <ForumIcon className="header__icon" fontSize="large" style={{ color: 'black' }} /> 
         </IconButton>
         </div>
     )

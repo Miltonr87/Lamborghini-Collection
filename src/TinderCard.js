@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCards from "react-tinder-card";
+import database from './firebase';
 import './TinderCard.css';
 
 // Array of objects come from react-tinder-card
 
 function TinderCard() {
-  const [people, setPeople] = useState([
+  const [people, setPeople] = useState([]);
+    /* Original hard-coded values for girls locations to test
     {
       name: "Holly Madison",
       url:
@@ -16,11 +18,19 @@ function TinderCard() {
       url:
         "https://i.etsystatic.com/7926516/r/il/caafdf/2304887802/il_794xN.2304887802_a7du.jpg",
     },
-  ]);
+    */
+// this where the code runs...
+  useEffect(() => {
+    database
+    .collection('people')
+    .onSnapshot(snapshot => (
+      setPeople(snapshot.docs.map(doc => doc.data()))
+    ));
+  }, []); // this prevent the infinity loop of loadings
 
   return (
     <div>
-      <h1>Tinder Card</h1>
+      
         <div className="tinderCards__cardContainer">
         {people.map((person) => (
         <TinderCards

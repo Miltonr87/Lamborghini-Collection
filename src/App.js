@@ -3,32 +3,32 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import './App.css';
 import Header from './Header';
 import TinderCard from './TinderCard';
+import SwipeButtons from './SwipeButtons';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
     
-    <Header />
     <Router>
-
       <Switch>
         <Route path="/chat">
-          <h1> Im a ChatPage</h1>
+          <Header backButton="/" />
+            <h1> Im a ChatPage</h1>
         </Route>
         <Route path="/">
+          <Header />
           {/* Tinder Card */}
           <TinderCard />
+          {/* Swipe Buttons */}
+          <SwipeButtons />
         </Route>
       </Switch>
-
     </Router>
-
 
     </div>
   );

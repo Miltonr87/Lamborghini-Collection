@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9f9f9;
+}   
+
+.header__logo {
+    height: 40px;
+}

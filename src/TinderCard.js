@@ -19,7 +19,6 @@ function TinderCard() {
         "https://i.etsystatic.com/7926516/r/il/caafdf/2304887802/il_794xN.2304887802_a7du.jpg",
     },
     */
-// this where the code runs...
   useEffect(() => {
     database
     .collection('people')

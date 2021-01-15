@@ -8,6 +8,7 @@ import {
 import Header from './Header';
 import TinderCard from './TinderCard';
 import SwipeButtons from './SwipeButtons';
+import ChatRoom from './ChatRoom';
 import './App.css';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path="/chat">
           <Header backButton="/" />
             <h1> Im a ChatPage</h1>
+            {/* Chat Room */}
+            <ChatRoom />
         </Route>
         <Route path="/">
           <Header />

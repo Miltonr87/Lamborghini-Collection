@@ -9,6 +9,7 @@ import Header from './Header';
 import TinderCard from './TinderCard';
 import SwipeButtons from './SwipeButtons';
 import ChatRoom from './ChatRoom';
+import ChatScreen from './ChatScreen';
 import './App.css';
 
 function App() {
@@ -17,17 +18,20 @@ function App() {
     
     <Router>
       <Switch>
+      {/* In a Chat With a Person */}
+        <Route path="/chat/:person">
+          <Header backButton="/chat" />
+            <ChatScreen />
+        </Route>
+        {/* ChatRoom */}
         <Route path="/chat">
           <Header backButton="/" />
-            <h1> Im a ChatPage</h1>
-            {/* Chat Room */}
             <ChatRoom />
         </Route>
+        {/* MainMenu */}
         <Route path="/">
           <Header />
-          {/* Tinder Card */}
           <TinderCard />
-          {/* Swipe Buttons */}
           <SwipeButtons />
         </Route>
       </Switch>

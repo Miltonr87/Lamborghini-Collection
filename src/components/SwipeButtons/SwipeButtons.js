@@ -7,26 +7,26 @@ import CloseIcon from '@material-ui/icons/Close';
 import StarRateIcon from '@material-ui/icons/StarRate';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
-
 import "./SwipeButtons.css";
+import { Link } from "react-router-dom";
 
 const SwipeButtons = () => {
   return (
     <div className="swipeButtons">
     <IconButton>
-      <ReplayIcon className="swipeButtons__repeat" fontSize="large" />
+      <ReplayIcon className="swipeButtons__repeat" onClick={() => window.location.reload() } fontSize="large" />
     </IconButton>
     <IconButton>  
-      <CloseIcon className="swipeButtons__close" fontSize="large" />
+      <CloseIcon className="swipeButtons__close" onClick={() => alert('💔 DISLIKE THE GIRL!! REALLY? 💔')} fontSize="large" />
     </IconButton>
     <IconButton>  
-      <StarRateIcon className="swipeButtons__star" fontSize="large" />
+      <StarRateIcon className="swipeButtons__star" onClick={() => alert('🌟 SEXY GIRL!!! 🌟')} fontSize="large" />
     </IconButton>
     <IconButton>  
-      <FavoriteIcon className="swipeButtons__favorite" fontSize="large" />
+      <FavoriteIcon className="swipeButtons__favorite" onClick={() => alert('💗 HOT GIRL!! 💗')} fontSize="large" />
     </IconButton>
     <IconButton>
-      <FlashOnIcon className="swipeButtons__flash" fontSize="large" />
+      <FlashOnIcon className="swipeButtons__flash" onClick={() => alert('💙 FLASHBACK! 💙')} fontSize="large" />
     </IconButton>
     </div>
   );

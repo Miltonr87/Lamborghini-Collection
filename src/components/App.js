@@ -5,11 +5,12 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Header from './Header';
-import TinderCard from './TinderCard';
-import SwipeButtons from './SwipeButtons';
-import ChatRoom from './ChatRoom';
-import ChatScreen from './ChatScreen';
+import LogIn from './LogIn/Login';
+import Header from './Header/Header';
+import TinderCard from './Cards/TinderCard';
+import SwipeButtons from './SwipeButtons/SwipeButtons';
+import ChatRoom from './Chats/ChatRoom';
+import ChatScreen from './Chats/ChatScreen';
 import './App.css';
 
 function App() {
@@ -29,10 +30,14 @@ function App() {
             <ChatRoom />
         </Route>
         {/* MainMenu */}
-        <Route path="/">
+        <Route path="/home">
           <Header />
           <TinderCard />
           <SwipeButtons />
+        </Route>
+        {/* LogIn */}
+        <Route path="/">
+          <LogIn />
         </Route>
       </Switch>
     </Router>

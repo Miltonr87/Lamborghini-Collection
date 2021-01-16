@@ -21,16 +21,18 @@ function Header({ backButton }) {
             />
         </IconButton>    
     ) : (
-      <IconButton>
-        <PersonIcon
-          className="header__icon"
-          fontSize="large"
-          style={{ color: "black" }}
-        />
-      </IconButton>
+      <Link to="/">
+        <IconButton>
+          <PersonIcon
+            className="header__icon"
+            fontSize="large"
+            style={{ color: "black" }}
+          />
+        </IconButton>
+      </Link>
       )}
 
-      <Link to="/">
+      <Link to="/home">
         <img
           className="header__logo"
           src="https://cdn.pixabay.com/photo/2012/04/26/13/58/playboy-42527_960_720.png"

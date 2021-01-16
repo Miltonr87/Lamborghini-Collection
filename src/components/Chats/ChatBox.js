@@ -17,6 +17,6 @@ function ChatBox({ name, msg, time, profilePic }) {
     </div>
     </Link>
   );
-}
+};
 
 export default ChatBox;

@@ -8,7 +8,6 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import "./SwipeButtons.css";
-import { Link } from "react-router-dom";
 
 const SwipeButtons = () => {
   return (

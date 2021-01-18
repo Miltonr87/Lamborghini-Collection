@@ -9,27 +9,27 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link, useHistory } from "react-router-dom";
 
 function Header({ backButton }) {
-    const history = useHistory();  // Give us the browser history
+  const history = useHistory(); // Give us the browser history
   return (
     <div className="header">
-    {backButton ? (
-        <IconButton onClick={() => history.replace(backButton)}>  
-            <ArrowBackIosIcon
-            className="header__icon"
-            fontSize="large"
-            style={{ color: "black" }}
-            />
-        </IconButton>    
-    ) : (
-      <Link to="/">
-        <IconButton>
-          <PersonIcon
+      {backButton ? (
+        <IconButton onClick={() => history.replace(backButton)}>
+          <ArrowBackIosIcon
             className="header__icon"
             fontSize="large"
             style={{ color: "black" }}
           />
         </IconButton>
-      </Link>
+      ) : (
+        <Link to="/">
+          <IconButton>
+            <PersonIcon
+              className="header__icon"
+              fontSize="large"
+              style={{ color: "black" }}
+            />
+          </IconButton>
+        </Link>
       )}
 
       <Link to="/home">

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import TinderCards from "react-tinder-card"; // Array of objects come from react-tinder-card
-import database from '../Firebase/firebase';
-import './TinderCard.css';
+import database from "../Firebase/firebase";
+import "./TinderCard.css";
 
 function TinderCard() {
   const [people, setPeople] = useState([]);
-    /* Original hard-coded values for girls locations to test
+  /* Original hard-coded values for girls locations to test
     {
       name: "Holly Madison",
       url:
@@ -19,31 +19,30 @@ function TinderCard() {
     */
   useEffect(() => {
     database
-    .collection('people')
-    .onSnapshot(snapshot => (
-      setPeople(snapshot.docs.map(doc => doc.data()))
-    ));
+      .collection("people")
+      .onSnapshot((snapshot) =>
+        setPeople(snapshot.docs.map((doc) => doc.data()))
+      );
   }, []); // this prevent the infinity loop of loadings
 
   return (
     <div>
-      
-        <div className="tinderCards__cardContainer">
+      <div className="tinderCards__cardContainer">
         {people.map((person) => (
-        <TinderCards
-          className="swipe"
-          key={person.name}
-          preventSwipe={['up', 'down']}
-        >
-          <div
-            style={{ backgroundImage: `url(${person.url})` }}
-            className="card"
+          <TinderCards
+            className="swipe"
+            key={person.name}
+            preventSwipe={["up", "down"]}
           >
-            <h3> {person.name} </h3>
-          </div>
-        </TinderCards>
-      ))}
-        </div>
+            <div
+              style={{ backgroundImage: `url(${person.url})` }}
+              className="card"
+            >
+              <h3> {person.name} </h3>
+            </div>
+          </TinderCards>
+        ))}
+      </div>
     </div>
   );
 }

@@ -24,7 +24,7 @@ function Login() {
   console.log(inputData)
   const welcome = contactsData.map(contact => (
     <div className="container__logged">
-    <h2>Welcome {contact.username}! <br></br> Click below: </h2>
+    <h2>Welcome {contact.username}! <br></br> Click to continue: </h2>
     <Link to="/home"><img className="playboy__logged" src={PlayboyLogged} alt="Click to enter" /></Link>
     </div>
     ))

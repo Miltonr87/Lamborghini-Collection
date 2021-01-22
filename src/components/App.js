@@ -32,7 +32,7 @@ function App() {
             <SwipeButtons />
           </Route>
           {/* LogIn */}
-          <Route path="/">
+          <Route exact path="/">
             <LogIn />
           </Route>
         </Switch>

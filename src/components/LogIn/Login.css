@@ -12,7 +12,6 @@
   }
   
   .container {
-    /*margin: 10% auto;*/
     padding: 80px 0;
     text-align: center;
   }
@@ -61,7 +60,6 @@
   }
 
   footer {
-    /*position: absolute;*/
     text-align: center;
     margin-top: 30px;
     bottom: 0;

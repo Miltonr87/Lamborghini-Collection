@@ -16,16 +16,16 @@ const SwipeButtons = () => {
       <ReplayIcon className="swipeButtons__repeat" onClick={() => window.location.reload() } fontSize="large" />
     </IconButton>
     <IconButton>  
-      <CloseIcon className="swipeButtons__close" onClick={() => alert('💔 DISLIKE THE GIRL!! REALLY? 💔')} fontSize="large" />
+      <CloseIcon className="swipeButtons__close" onClick={() => alert('💔 DISLIKE THE GIRL! REALLY? 💔')} fontSize="large" />
     </IconButton>
     <IconButton>  
-      <StarRateIcon className="swipeButtons__star" onClick={() => alert('🌟 SEXY GIRL!!! 🌟')} fontSize="large" />
+      <StarRateIcon className="swipeButtons__star" onClick={() => alert('🌟 OUTSTANDING STAR 🌟')} fontSize="large" />
     </IconButton>
     <IconButton>  
-      <FavoriteIcon className="swipeButtons__favorite" onClick={() => alert('💗 HOT GIRL!! 💗')} fontSize="large" />
+      <FavoriteIcon className="swipeButtons__favorite" onClick={() => alert('💗 SEXY GIRL! 💗')} fontSize="large" />
     </IconButton>
     <IconButton>
-      <FlashOnIcon className="swipeButtons__flash" onClick={() => alert('💙 FLASHBACK! 💙')} fontSize="large" />
+      <FlashOnIcon className="swipeButtons__flash" onClick={() => alert('⚡ FLASHBACK! ⚡')} fontSize="large" />
     </IconButton>
     </div>
   );

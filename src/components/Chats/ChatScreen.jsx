@@ -3,23 +3,24 @@ import Avatar from "@material-ui/core/Avatar";
 import "./ChatScreen.css";
 
 function ChatScreen() {
+  const date = new Date().getFullYear();
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
-      name: "Suzana Alves",
+      name: "Hugh Hefner",
       image:
-        "https://correio-cdn1.cworks.cloud/fileadmin/acervo/uploads/RTEmagicC_7a574d876a.jpg.jpg",
-      message: "Why did you leave me alone?!!",
+        "https://i.pinimg.com/originals/75/dd/06/75dd065523e897b3102122b4f35e21d5.jpg",
+      message: "Whats upp, little rabbit🐰🐰?!",
     },
     {
       name: "Suzana Alves",
       image:
-        "https://correio-cdn1.cworks.cloud/fileadmin/acervo/uploads/RTEmagicC_7a574d876a.jpg.jpg",
-      message: "Am I not good enough for you😞😞😞😞?!!",
+        "https://i.pinimg.com/originals/75/dd/06/75dd065523e897b3102122b4f35e21d5.jpg",
+      message: "You didn't expect to find me here, did you?!",
     },
     {
       message: "...",
-    }, // hard-coded values for messages to test
+    }, 
   ]);
 
   const handleSend = (event) => {
@@ -32,7 +33,7 @@ function ChatScreen() {
   return (
     <div className="chatScreen">
       <p className="chatScreen__time">
-        YOU MATCHED WITH SUZANA ALVES ON 01/15/2021
+        YOU MATCHED WITH HUGH HEFNER ON {date}
       </p>
       {messages.map((message) =>
         message.name ? (

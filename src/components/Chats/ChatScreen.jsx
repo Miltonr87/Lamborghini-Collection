@@ -13,14 +13,14 @@ function ChatScreen() {
       message: "Whats upp, little rabbit🐰🐰?!",
     },
     {
-      name: "Suzana Alves",
+      name: "Hugh Hefner",
       image:
         "https://i.pinimg.com/originals/75/dd/06/75dd065523e897b3102122b4f35e21d5.jpg",
       message: "You didn't expect to find me here, did you?!",
     },
     {
       message: "...",
-    }, 
+    },
   ]);
 
   const handleSend = (event) => {
@@ -32,9 +32,7 @@ function ChatScreen() {
 
   return (
     <div className="chatScreen">
-      <p className="chatScreen__time">
-        YOU MATCHED WITH HUGH HEFNER ON {date}
-      </p>
+      <p className="chatScreen__time">YOU MATCHED WITH HUGH HEFNER ON {date}</p>
       {messages.map((message) =>
         message.name ? (
           <div>

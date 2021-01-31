@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+### Playboy Classics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screen Shot](https://github.com/Miltonr87/Playboy-Classics/blob/main/playboy.png)
 
-## Available Scripts
+[X] Mobile version
 
-In the project directory, you can run:
+### About
 
-### `yarn start`
+Made with React and Mobile First techniques, the Web APP consumes an FireBase API created by me with 10 magazine covers. The idea was to recreate an atmosphere produced by the dating Tinder APP with information from the famous Playboy Magazines of all time. The user can interact and decide what magazines liked or not. A special Chat Area and Authentication Login were also added to the project. The next step is to authenticate via accounts on Google / Facebook used React Redux knowledge. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+!ATTENTION!: none of the magazines that appears in the application feature naked women. They are just reproductions of classic magazines! In other words, Playboy here (and all images rights), are being used only as a means of communication in a React learning process. The author is not responsible for any improper use of the brand or Web APP.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Getting Started
 
-### `yarn test`
+- Clone the repo (HTTP Protocol): ```git clone https://github.com/Miltonr87/Playboy-Classics.git```
+- Using NPM or Yarn to install the React APP and run the project on your computer. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Required:
 
-### `yarn build`
+As you see, Playboy Classics runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed with NPM or Yarn. Once you have Node installed, you will need the React (17.01) library. So, to start the project in your machine, open your terminal inside the Playboy Classics folder and type "NPM Install" or "Yarn Install".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Additional packages
+- [React Tinder Card](https://github.com/3DJakob/react-tinder-card) (To swipe Left and Right cards)
+- [React Router](https://reactrouter.com/) (React Component Pattern)
+- [FireBase](https://firebase.google.com/) (To store magazine covers on the FireStore Cloud)
+- [Material UI](https://material-ui.com/pt/) (To ensure the closest design to Tinder)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Live Demo 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [LIVE DEMO HERE](https://playboy-classics.miltonr87.vercel.app/)
 
-### `yarn eject`
+#### License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](https://magno.mit-license.org/2018). Copyright © Milton Rodrigues

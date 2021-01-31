@@ -6,9 +6,9 @@
 
 ### About
 
-Made with React and Mobile First techniques, the Web APP consumes an FireBase API created by me with 10 magazine covers. The idea was to recreate an atmosphere produced by the dating Tinder APP with information from the famous Playboy Magazines of all time. The user can interact and decide what magazines liked or not. A special Chat Area and Authentication Login were also added to the project. The next step is to authenticate via accounts on Google / Facebook used React Redux knowledge. 
+Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created by me with 10 magazine covers. The idea was to recreate an atmosphere produced by the dating **Tinder APP** with information from the famous **Playboy Magazines** of all time. The user can interact and decide what magazines liked or not. A special **Chat Area and Authentication Login** were also added to the project. The next step is to authenticate via accounts on Google / Facebook used **React Redux** knowledge. 
 
-_*ATTENTION: none of the magazines that appears in the application feature naked women. They are just reproductions of classic magazines! In other words, Playboy here (and all images rights), are being used only as a means of communication in a React learning process. The author is not responsible for any improper use of the brand or Web APP.*_
+_*ATTENTION: None of the magazines that appears in the application feature naked women. They are just reproductions of classic magazines! In other words, Playboy here (and all images rights) are being used ONLY for the purpose of communication and studies in a React process. The author is not responsible for any improper use of the brand or Web APP.*_
 
 ### Getting Started
 
@@ -17,7 +17,7 @@ _*ATTENTION: none of the magazines that appears in the application feature naked
 
 ### Required:
 
-As you see, Playboy Classics runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed with NPM or Yarn. Once you have Node installed, you will need the React (17.01) library. So, to start the project in your machine, open your terminal inside the Playboy Classics folder and type "NPM Install" or "Yarn Install".
+As you see, **Playboy Classics** runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed with NPM or Yarn. Once you have Node installed, you will need the React (17.01) library. So, to start the project in your machine, open your terminal inside the Playboy Classics folder and type "NPM Install" or "Yarn Install".
 
 ### Additional packages
 - [React Tinder Card](https://github.com/3DJakob/react-tinder-card) (To swipe Left and Right cards)

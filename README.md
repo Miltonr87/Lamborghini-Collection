@@ -6,7 +6,7 @@
 
 ### About
 
-Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 10 magazine outstanding covers. The idea was to recreate an atmosphere produced dating apps like **Tinder** with Playboy Magazines. The user can interact and decide what magazines liked or not. A special **ChatBox** and **Login System** were also added to the project. The next step is to manage authentications with Google / Facebook accounts using **React Redux** knowledge. 
+Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 10 magazine outstanding covers. The idea was to recreate an atmosphere produced by dating apps like **Tinder**. The user can interact and decide what magazines liked or not. A special **ChatBox** and **Login System** were also added to the project. The next step is to manage authentications with Google / Facebook accounts using **React Redux** knowledge. 
 
 _* **ATTENTION**: None of the magazines that appears in the app shows naked women. So, Playboy (and all images copyrights) are being used ONLY for the purpose of communication and studies in a React process. The author is not responsible for any improper use of the brand or app.*_
 

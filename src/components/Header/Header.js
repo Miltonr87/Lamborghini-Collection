@@ -1,15 +1,13 @@
 import React from "react";
 import "./Header.css";
-//Material UI Extensions:
 import PersonIcon from "@material-ui/icons/Person";
 import ForumIcon from "@material-ui/icons/Forum";
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-// React Router
 import { Link, useHistory } from "react-router-dom";
 
 function Header({ backButton }) {
-  const history = useHistory(); // Give us the browser history
+  const history = useHistory();
   return (
     <div className="header">
       {backButton ? (

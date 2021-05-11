@@ -8,18 +8,6 @@ function Login() {
   const [inputData, setInputData] = useState({ username: "", password: "" });
   const [contactsData, setContactsData] = useState([]);
   const date = new Date().getFullYear();
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setInputData((prevInputData) => ({ ...prevInputData, [name]: value }));
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    setContactsData((prevContacts) => [...prevContacts, inputData]);
-  }
-
-  console.log(inputData);
   const welcome = contactsData.map((contact) => (
     <div className="container__logged">
       <h2>
@@ -34,6 +22,16 @@ function Login() {
       </Link>
     </div>
   ));
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setInputData((prevInputData) => ({ ...prevInputData, [name]: value }));
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setContactsData((prevContacts) => [...prevContacts, inputData]);
+  }
 
   return (
     <div className="container__logged">

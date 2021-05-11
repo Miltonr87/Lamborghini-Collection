@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  PlayboyImage,
   LoginContainer,
   LoginInput,
   ButtonConfirm,
@@ -20,7 +19,10 @@ const Login = () => {
         Welcome {contact.username}! <br /> Click to continue:
       </h2>
       <Link to="/home">
-        <PlayboyImage src={PlayboyLogged} alt="Click to enter" />
+        <img 
+          src={PlayboyLogged} 
+          style={{ height: "10vh" }} 
+          alt="Click to enter" />
       </Link>
     </LoginContainer>
   ));

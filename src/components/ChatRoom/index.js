@@ -1,10 +1,9 @@
 import React from "react";
-// import "./ChatRoom.css";
 import ChatBox from "./ChatBox";
 
-function ChatRoom() {
+const ChatRoom = () => {
   return (
-    <div className="chatroom">
+    <div>
       <ChatBox
         name="Hugh Hefner"
         msg="Whats upp, little rabbit🐰🐰?! You didn't expect to find me here, did you?!"
@@ -13,6 +12,6 @@ function ChatRoom() {
       />
     </div>
   );
-}
+};
 
 export default ChatRoom;

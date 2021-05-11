@@ -1,16 +1,17 @@
 import React from "react";
 import IconButton from "@material-ui/core/IconButton";
-import { SwipeSection, 
+import {
+  Swipe,
   ButtonRepeat,
   ButtonClose,
   ButtonStar,
   ButtonFavorite,
-  ButtonFlash } from "./SwipeButtons";
-
+  ButtonFlash,
+} from "./SwipeButtons";
 
 const SwipeButtons = () => {
   return (
-    <SwipeSection>
+    <Swipe>
       <IconButton>
         <ButtonRepeat
           onClick={() => window.location.reload()}
@@ -19,7 +20,7 @@ const SwipeButtons = () => {
       </IconButton>
       <IconButton>
         <ButtonClose
-          onClick={() => alert("💔 DISLIKE THE GIRL! REALLY? 💔")}
+          onClick={() => alert("💔 DISLIKE THE GIRL! 💔")}
           fontSize="large"
         />
       </IconButton>
@@ -41,7 +42,7 @@ const SwipeButtons = () => {
           fontSize="large"
         />
       </IconButton>
-    </SwipeSection>
+    </Swipe>
   );
 };
 

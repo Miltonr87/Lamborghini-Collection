@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import Avatar from "@material-ui/core/Avatar";
-import "./ChatScreen.css";
+import {
+  ChatTime,
+  ChatMessage,
+  ChatAvatar,
+  ChatPerson,
+  ChatUser,
+  InputChat,
+  InputField,
+  InputButton,
+} from "./ChatScreen";
 
 function ChatScreen() {
   const date = new Date().getFullYear();
@@ -23,51 +31,42 @@ function ChatScreen() {
     },
   ]);
 
-  const handleSend = (event) => {
-    event.preventDefault();
+  const handleSend = (e) => {
+    e.preventDefault();
 
     setMessages([...messages, { message: input }]);
     setInput("");
   };
 
   return (
-    <div className="chatScreen">
-      <p className="chatScreen__time">YOU MATCHED WITH HUGH HEFNER ON {date}</p>
+    <div>
+      <ChatTime>YOU MATCHED WITH HUGH HEFNER ON {date}</ChatTime>
       {messages.map((message) =>
         message.name ? (
           <div>
-            <div className="chatScreen__message">
-              <Avatar
-                className="chatScreen__image"
-                alt={message.name}
-                src={message.image}
-              />
-              <p className="chatScreen__text">{message.message}</p>
-            </div>
+            <ChatMessage>
+              <ChatAvatar alt={message.name} src={message.image} />
+              <ChatUser>{message.message}</ChatUser>
+            </ChatMessage>
           </div>
         ) : (
-          <div className="chatScreen__message">
-            <p className="chatScreen__textUser">{message.message}</p>
-          </div>
+          <ChatMessage>
+            <ChatPerson>{message.message}</ChatPerson>
+          </ChatMessage>
         )
       )}
 
-      <form className="chatScreen__input">
-        <input
+      <InputChat>
+        <InputField
           value={input}
           onChange={(event) => setInput(event.target.value)}
-          className="chatScreen__inputField"
           type="text"
           placeholder="Type a message"
         />
-        <button
-          onClick={handleSend}
-          type="submit"
-          className="chatScreen__inputButton"
-        >
+        <InputButton onClick={handleSend} type="submit">
           Send Message
-        </button>
-      </form>
+        </InputButton>
+      </InputChat>
     </div>
   );
 }

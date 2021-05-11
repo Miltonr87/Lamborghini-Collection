@@ -1,53 +1,34 @@
-import React from "react";
-import "./Header.css";
+import styled from "styled-components";
 import PersonIcon from "@material-ui/icons/Person";
 import ForumIcon from "@material-ui/icons/Forum";
-import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-import { Link, useHistory } from "react-router-dom";
 
-function Header({ backButton }) {
-  const history = useHistory();
-  return (
-    <div className="header">
-      {backButton ? (
-        <IconButton onClick={() => history.replace(backButton)}>
-          <ArrowBackIosIcon
-            className="header__icon"
-            fontSize="large"
-            style={{ color: "black" }}
-          />
-        </IconButton>
-      ) : (
-        <Link to="/">
-          <IconButton>
-            <PersonIcon
-              className="header__icon"
-              fontSize="large"
-              style={{ color: "black" }}
-            />
-          </IconButton>
-        </Link>
-      )}
+export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f9f9f9;
+`;
 
-      <Link to="/home">
-        <img
-          className="header__logo"
-          src="https://cdn.pixabay.com/photo/2012/04/26/13/58/playboy-42527_960_720.png"
-          alt="Tinder logo"
-        />
-      </Link>
-      <Link to="/chat">
-        <IconButton>
-          <ForumIcon
-            className="header__icon"
-            fontSize="large"
-            style={{ color: "black" }}
-          />
-        </IconButton>
-      </Link>
-    </div>
-  );
-}
+export const HeaderLogo = styled.img`
+  height: 40px;
+  object-fit: content;
+`;
 
-export default Header;
+export const IconPerson = styled(PersonIcon)`
+  padding: 20px;
+  color: black;
+  font-size: large;
+`;
+
+export const IconChat = styled(ForumIcon)`
+  padding: 20px;
+  color: black;
+  font-size: large;
+`;
+
+export const IconReturn = styled(ArrowBackIosIcon)`
+  padding: 20px;
+  color: black;
+  font-size: large;
+`;

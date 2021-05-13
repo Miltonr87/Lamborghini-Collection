@@ -20,7 +20,7 @@ const SwipeButtons = () => {
       </IconButton>
       <IconButton>
         <ButtonClose
-          onClick={() => alert("💰 EXPANSIVE 💰")}
+          onClick={() => alert("💰 BUY 💰")}
           fontSize="large"
         />
       </IconButton>

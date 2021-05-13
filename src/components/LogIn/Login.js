@@ -35,6 +35,10 @@ export const ButtonConfirm = styled.button`
   border-radius: 90px;
   width: 250px;
   font-size: 18px;
+  &:hover {
+        transition: all 0.2s ease-in-out;
+        color: yellow;
+  }
 `;
 
 export const Signature = styled.footer`

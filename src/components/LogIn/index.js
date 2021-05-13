@@ -16,12 +16,12 @@ const Login = () => {
   const welcome = contactsData.map((contact) => (
     <LoginContainer>
       <h2>
-        Welcome {contact.username}! <br /> Click to advance:
+        Welcome {contact.username}! <br />
       </h2>
       <Link to="/home">
         <img 
           src={LamborghiniLogged } 
-          style={{ height: "40vh", boxShadow: "rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px" }} 
+          style={{ height: "30vh", boxShadow: "rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px" }} 
           alt="Click to enter" />
       </Link>
     </LoginContainer>

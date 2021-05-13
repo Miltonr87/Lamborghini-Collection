@@ -10,6 +10,7 @@ export const ChatMessage = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
+  margin-bottom: 25px;
 `;
 
 export const ChatAvatar = styled(Avatar)`
@@ -38,7 +39,8 @@ export const InputChat = styled.form`
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
+  box-Shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 `;
 
 export const InputField = styled.input`
@@ -46,11 +48,18 @@ export const InputField = styled.input`
   padding: 10px;
   border: none;
   background-color: yellow;
+  
 `;
 
 export const InputButton = styled.button`
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: yellow;
   font-weight: bold;
   color: black;
+  
+  &:hover {
+  transition: all 0.2s ease-in-out;
+  box-Shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  border-color: none;
+}
 `;

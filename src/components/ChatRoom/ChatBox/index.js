@@ -7,14 +7,13 @@ import {
   ChatTime,
 } from "./ChatBox";
 
-const ChatBox = ({ name, msg, time, profilePic }) => {
+const ChatBox = ({ name, time, profilePic }) => {
   return (
     <ChatLink to={`/chat/${name}`}>
       <ChatList>
         <ChatAvatar src={profilePic} />
         <ChatDetails>
           <h2>{name}</h2>
-          <p>{msg}</p>
         </ChatDetails>
         <ChatTime>{time}</ChatTime>
       </ChatList>

@@ -15,16 +15,16 @@ function ChatScreen() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
-      name: "Hugh Hefner",
+      name: "Ferruccio Lamborghini",
       image:
-        "https://i.pinimg.com/originals/75/dd/06/75dd065523e897b3102122b4f35e21d5.jpg",
-      message: "Whats upp, little rabbit🐰🐰?!",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-Nxg9cXaBtQ4%2FTzrSYWUNcmI%2FAAAAAAAAAGg%2F0-KDzkb9pwg%2Fs1600%2Fferruccio.jpeg&f=1&nofb=1",
+      message: "I wanted a compact and elegant car...",
     },
     {
-      name: "Hugh Hefner",
+      name: "Ferruccio Lamborghini",
       image:
-        "https://i.pinimg.com/originals/75/dd/06/75dd065523e897b3102122b4f35e21d5.jpg",
-      message: "You didn't expect to find me here, did you?!",
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-Nxg9cXaBtQ4%2FTzrSYWUNcmI%2FAAAAAAAAAGg%2F0-KDzkb9pwg%2Fs1600%2Fferruccio.jpeg&f=1&nofb=1",
+      message: "Ferrari never spoke to me again. He was a great man, I admit, but it was so very easy to upset him.",
     },
     {
       message: "...",
@@ -40,7 +40,7 @@ function ChatScreen() {
 
   return (
     <div>
-      <ChatTime>YOU MATCHED WITH HUGH HEFNER ON {date}</ChatTime>
+      <ChatTime>TALK WITH FERRUCIO LAMBORGHINI ON {date}</ChatTime>
       {messages.map((message) =>
         message.name ? (
           <div>

@@ -20,25 +20,25 @@ const SwipeButtons = () => {
       </IconButton>
       <IconButton>
         <ButtonClose
-          onClick={() => alert("💔 DISLIKE THE GIRL! 💔")}
+          onClick={() => alert("💰 EXPANSIVE 💰")}
           fontSize="large"
         />
       </IconButton>
       <IconButton>
         <ButtonStar
-          onClick={() => alert("🌟 OUTSTANDING STAR 🌟")}
+          onClick={() => alert("🚿 WASH 🚿")}
           fontSize="large"
         />
       </IconButton>
       <IconButton>
         <ButtonFavorite
-          onClick={() => alert("💗 SEXY GIRL! 💗")}
+          onClick={() => alert("✅ FAVORITE ✅")}
           fontSize="large"
         />
       </IconButton>
       <IconButton>
         <ButtonFlash
-          onClick={() => alert("⚡ FLASHBACK! ⚡")}
+          onClick={() => alert("⛽ FUEL ⛽")}
           fontSize="large"
         />
       </IconButton>

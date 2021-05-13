@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LogIn from "./components/LogIn";
 import Header from "./components/Header";
-import TinderCard from "./components/Cards/TinderCard";
+import LamborghiniCards from "./components/LamborghiniCards";
 import SwipeButtons from "./components/SwipeButtons";
 import ChatRoom from "./components/ChatRoom";
 import ChatScreen from "./components/ChatRoom/ChatScreen";
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     color: black;
     font-weight: 300;
-    background: white;
+    background: gold;
     width: 100%;
     height: 100%;
   }
@@ -39,7 +39,7 @@ function App() {
           </Route>
           <Route path="/home">
             <Header />
-            <TinderCard />
+            <LamborghiniCards />
             <SwipeButtons />
           </Route>
           <Route exact path="/">

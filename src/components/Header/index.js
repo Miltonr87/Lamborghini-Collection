@@ -8,6 +8,7 @@ import {
 } from "./Header";
 import { Link, useHistory } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
+import LamborghiniLogo from "../../assets/Logo/lamborghini2.png";
 
 const Header = ({ backButton }) => {
   const history = useHistory();
@@ -28,7 +29,7 @@ const Header = ({ backButton }) => {
 
       <Link to="/home">
         <HeaderLogo
-          src="https://cdn.pixabay.com/photo/2012/04/26/13/58/playboy-42527_960_720.png"
+          src={ LamborghiniLogo }
           alt="Playboy logo"
         />
       </Link>

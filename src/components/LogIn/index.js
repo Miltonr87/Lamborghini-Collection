@@ -5,8 +5,8 @@ import {
   ButtonConfirm,
   Signature,
 } from "./Login";
-import PlayboyLogo from "../../assets/Logo/playboyLogo.png";
-import PlayboyLogged from "../../assets/Logo/playboy-wide.png";
+import LamborghiniLogo from "../../assets/Logo/Lamborghini-Logo.png";
+import LamborghiniLogged from "../../assets/Logo/diablo.gif";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -16,12 +16,12 @@ const Login = () => {
   const welcome = contactsData.map((contact) => (
     <LoginContainer>
       <h2>
-        Welcome {contact.username}! <br /> Click to continue:
+        Welcome {contact.username}! <br /> Click to advance:
       </h2>
       <Link to="/home">
         <img 
-          src={PlayboyLogged} 
-          style={{ height: "10vh" }} 
+          src={LamborghiniLogged } 
+          style={{ height: "40vh", boxShadow: "rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px" }} 
           alt="Click to enter" />
       </Link>
     </LoginContainer>
@@ -41,7 +41,7 @@ const Login = () => {
     <LoginContainer>
       <form onSubmit={handleSubmit}>
         <img
-          src={PlayboyLogo}
+          src={LamborghiniLogo}
           style={{ marginBottom: "20px", height: "10rem" }}
           alt="Playboy Logo"
         />

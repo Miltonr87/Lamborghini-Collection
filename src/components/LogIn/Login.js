@@ -8,6 +8,7 @@ export const LoginContainer = styled.div`
   }
 `;
 
+
 export const LoginInput = styled.input`
   border: 1px solid rgba(7, 7, 7, 0.829);
   background-color: rgba(252, 252, 252, 0.2);

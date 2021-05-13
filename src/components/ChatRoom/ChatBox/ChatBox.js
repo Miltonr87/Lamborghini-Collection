@@ -8,7 +8,7 @@ export const ChatList = styled.div`
   justify-content: space-between;
   padding: 20px;
   height: 70px;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 2px solid black;
 `;
 
 export const ChatLink = styled(Link)`
@@ -23,10 +23,10 @@ export const ChatAvatar = styled(Avatar)`
 export const ChatDetails = styled.div`
   flex: 1;
   .p {
-    color: grey;
+    color: black;
   }
 `;
 
 export const ChatTime = styled.p`
-  color: lightgrey;
+  color: black;
 `;

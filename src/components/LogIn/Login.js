@@ -10,7 +10,7 @@ export const LoginContainer = styled.div`
 `;
 
 export const VideoBg = styled.video`
-  height: 25vh;
+  height: 20vh;
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;

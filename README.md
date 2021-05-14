@@ -10,7 +10,7 @@ Made with **React** and **Mobile First techniques**, the Web APP consumes an **F
 
 _* **ATTENTION**: This project was changed after the first version to avoid controversy. The author only uses the Lamborghini brand (and all images and logos copyrights) to proposal of studies in React. The author is not responsible for any improper use of the brand or app!*_
 
-### Getting Started
+### Getting Startedr
 
 - Clone the repo (HTTP Protocol): ```git clone https://github.com/Miltonr87/Lamborghini-Collection.git```
 - Using NPM or Yarn to install the React APP and run the project on your computer. 
@@ -22,9 +22,14 @@ As you see, **Lamborghini Collection** runs on [Node.js](https://nodejs.org/), s
 ### Additional packages
 - [React Tinder Card](https://github.com/3DJakob/react-tinder-card) (To swipe Left and Right cards)
 - [React Router](https://reactrouter.com/) (React Component Pattern)
+- [React Sound](https://www.npmjs.com/package/react-sound) (To manage sound on components)
 - [Styled Components](https://github.com/styled-components/styled-components) (Used to increase performance CSS-In-JS)
 - [FireBase](https://firebase.google.com/) (To store cars covers on the FireStore Cloud)
 - [Material UI](https://material-ui.com/pt/) (To ensure the closest design to Tinder)
+
+### App Sound
+
+[Motivational Hopeful Travel by Alex Productions](https://www.free-stock-music.com/alex-productions-motivational-hopeful-travel-home.html)
 
 ### Live Demo 
 

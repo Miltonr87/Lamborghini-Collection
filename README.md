@@ -10,12 +10,12 @@ Made with **React** and **Mobile First techniques**, the Web APP consumes an **F
 
 _* **ATTENTION**: This project was changed after the first version to avoid controversy. The author only uses the Lamborghini brand (all images and logos copyrights) as a proposal of studies in React. The author is not responsible for any improper use of the brand or app!*_
 
-### Getting Startedr
+### Getting Starter
 
 - Clone the repo (HTTP Protocol): ```git clone https://github.com/Miltonr87/Lamborghini-Collection.git```
 - Using NPM or Yarn to install the React APP and run the project on your computer. 
 
-### Required:
+### Required
 
 As you see, **Lamborghini Collection** runs on [Node.js](https://nodejs.org/), so before you can continue, please ensure that you have it installed with NPM or Yarn. Once you have Node installed, you will need the React (17.01) library. So, to start the project in your machine, open your terminal inside the Lamborghini Collection folder and type "NPM Install" or "Yarn Install".
 

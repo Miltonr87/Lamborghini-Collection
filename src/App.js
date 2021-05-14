@@ -13,11 +13,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Ubuntu', sans-serif;
   }
 
+
   body {
     margin: 0;
     color: black;
+    background-color: #ffdd00;
     font-weight: 300;
-    background: gold;
     width: 100%;
     height: 100%;
   }

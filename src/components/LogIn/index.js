@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import {
   LoginContainer,
+  VideoBg,
   LoginInput,
   ButtonConfirm,
   Signature,
 } from "./Login";
 import LamborghiniLogo from "../../assets/Logo/Lamborghini-Logo.png";
-import LamborghiniLogged from "../../assets/Logo/diablo.gif";
+import LamborghiniLogged from "../../assets/Media/lamborghini.mp4";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -19,10 +20,12 @@ const Login = () => {
         Welcome {contact.username}! <br />
       </h2>
       <Link to="/home">
-        <img 
-          src={LamborghiniLogged } 
-          style={{ height: "30vh", boxShadow: "rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px" }} 
-          alt="Click to enter" />
+        <VideoBg
+          autoPlay
+          src={LamborghiniLogged}
+          type="video/mp4"
+          alt="Enter"
+        />
       </Link>
     </LoginContainer>
   ));

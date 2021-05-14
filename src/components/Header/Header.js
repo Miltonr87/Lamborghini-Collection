@@ -13,6 +13,10 @@ export const HeaderContainer = styled.div`
 export const HeaderLogo = styled.img`
   height: 50px;
   object-fit: content;
+
+  @media screen and (max-width: 1000px) {
+    height: 40px;
+  }
 `;
 
 export const IconPerson = styled(PersonIcon)`

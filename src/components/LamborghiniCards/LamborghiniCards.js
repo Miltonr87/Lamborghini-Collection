@@ -22,8 +22,8 @@ export const CarCards = styled.div`
   box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 760px) {
-    height: 60vw;
-    width: 50vw;
+    height: 80vw;
+    width: 70vw;
     background-size: cover;
   }
 

@@ -3,9 +3,19 @@ import styled from "styled-components";
 export const LoginContainer = styled.div`
   padding: 80px 0;
   text-align: center;
+  
   @media screen and (max-width: 1000px) {
     margin: 20px;
   }
+`;
+
+export const VideoBg = styled.video`
+  height: 25vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 `;
 
 
@@ -48,4 +58,8 @@ export const Signature = styled.footer`
   width: 100%;
   height: 2.5rem;
   font-style: italic;
+
+  @media screen and (max-width: 1000px) {
+    border-top: 2px solid black;
+  }
 `;

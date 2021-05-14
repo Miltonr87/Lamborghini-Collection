@@ -41,7 +41,7 @@ function ChatScreen() {
 
   return (
     <div>
-      <ChatTime>TALK WITH FERRUCIO LAMBORGHINI ON {date}</ChatTime>
+      <ChatTime> FERRUCIO LAMBORGHINI ON {date}</ChatTime>
       {messages.map((message) =>
         message.name ? (
           <div>

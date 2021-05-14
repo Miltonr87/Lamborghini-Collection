@@ -39,7 +39,7 @@ const Header = ({ backButton }) => {
         )}
 
         <Link to="/home">
-          <HeaderLogo src={LamborghiniLogo} alt="Playboy logo" />
+          <HeaderLogo src={LamborghiniLogo} alt="Lamborghini logo" />
         </Link>
 
         <Link to="/chat">

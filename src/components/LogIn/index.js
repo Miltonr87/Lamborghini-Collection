@@ -46,7 +46,7 @@ const Login = () => {
         <img
           src={LamborghiniLogo}
           style={{ marginBottom: "20px", height: "10rem" }}
-          alt="Playboy Logo"
+          alt="Lamborghini Logo"
         />
         <LoginInput
           type="text"

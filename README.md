@@ -33,7 +33,7 @@ As you see, **Lamborghini Collection** runs on [Node.js](https://nodejs.org/), s
 
 ### Live Demo 
 
-- [LIVE DEMO HERE](lamborghini-collection.vercel.app)
+- [LIVE DEMO HERE](http://lamborghini-collection.vercel.app)
 
 #### License
 

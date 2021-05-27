@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import IconButton from "@material-ui/core/IconButton";
 import {
   Swipe,
@@ -8,8 +8,14 @@ import {
   ButtonFavorite,
   ButtonFlash,
 } from "./SwipeButtons";
+import FavoriteModal from './FavoriteModal';
 
 const SwipeButtons = () => {
+  const [ showModal, setShowModal ] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  };
+
   return (
     <Swipe>
       <IconButton>
@@ -32,9 +38,10 @@ const SwipeButtons = () => {
       </IconButton>
       <IconButton>
         <ButtonFavorite
-          onClick={() => alert("✅ FAVORITE ✅")}
+          onClick={openModal}
           fontSize="large"
         />
+        <FavoriteModal showModal={showModal} setShowModal={setShowModal} />
       </IconButton>
       <IconButton>
         <ButtonFlash

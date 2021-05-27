@@ -48,3 +48,14 @@ export const ButtonFlash = styled(FlashOnIcon)`
   padding: 1vw !important;
   color: black !important;
 `;
+
+export const ModalButton = styled.button`
+  min-width: 100px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+`;

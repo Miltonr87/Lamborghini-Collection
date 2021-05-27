@@ -2,8 +2,8 @@ import styled from "styled-components";
 import CancelIcon from '@material-ui/icons/Cancel';
 
 export const ModalBackground = styled.div`
-    width: 100%;
-    height: 100%;
+    width: 300%;
+    height: 300%;
     background: rgba(0,0,0,0.8);
     position: fixed;
     display: flex;
@@ -14,6 +14,9 @@ export const ModalBackground = styled.div`
 export const ModalWrapper = styled.div` 
     width: 800px;
     height: 500px;
+    margin-left: 10rem;
+    margin-right: 45rem;
+    margin-bottom: 50rem;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     background: #fff;
     color: #000;
@@ -24,11 +27,13 @@ export const ModalWrapper = styled.div`
     border-radius: 10px;
 `;
 
-export const ModalImg = styled.img`
+export const ModalImg = styled.video`
     width: 100%;
     height: 100%;
     border-radius: 10px 0 0 10px;
     background: #000;
+    -o-object-fit: cover;
+  object-fit: cover;
 `;
 
 export const ModalContent = styled.div`

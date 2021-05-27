@@ -53,9 +53,12 @@ export const InputField = styled.input`
 
 export const InputButton = styled.button`
   margin-right: 10px;
-  background-color: yellow;
+  padding: 3px;
+  background: #141414;
   font-weight: bold;
-  color: black;
+  color: yellow;
+  border-radius: 15px;
+  
   
   &:hover {
   transition: all 0.2s ease-in-out;

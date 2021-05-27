@@ -10,12 +10,12 @@ import ChatScreen from "./components/ChatRoom/ChatScreen";
 
 const GlobalStyle = createGlobalStyle`
   * {
+    margin: 0;
+    padding: 0;
     font-family: 'Ubuntu', sans-serif;
   }
 
-
   body {
-    margin: 0;
     color: black;
     background-color: #ffdd00;
     font-weight: 300;

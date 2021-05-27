@@ -5,10 +5,10 @@ import {
   ButtonRepeat,
   ButtonClose,
   ButtonStar,
-  ButtonFavorite,
+  ButtonDrive,
   ButtonFlash,
 } from "./SwipeButtons";
-import FavoriteModal from './FavoriteModal';
+import DriveModal from './DriveModal';
 
 const SwipeButtons = () => {
   const [ showModal, setShowModal ] = useState(false);
@@ -37,11 +37,12 @@ const SwipeButtons = () => {
         />
       </IconButton>
       <IconButton>
-        <ButtonFavorite
+      <DriveModal showModal={showModal} setShowModal={setShowModal} />
+        <ButtonDrive
           onClick={openModal}
           fontSize="large"
+          alt="Drive"
         />
-        <FavoriteModal showModal={showModal} setShowModal={setShowModal} />
       </IconButton>
       <IconButton>
         <ButtonFlash

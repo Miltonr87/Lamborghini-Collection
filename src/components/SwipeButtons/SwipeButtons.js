@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/AttachMoney";
 import StarRateIcon from "@material-ui/icons/LocalCarWash";
-import FavoriteIcon from "@material-ui/icons/DoneAll";
+import DriveEtaIcon from '@material-ui/icons/DriveEta';
 import FlashOnIcon from "@material-ui/icons/EvStation";
 
 export const Swipe = styled.div`
@@ -39,7 +39,7 @@ export const ButtonStar = styled(StarRateIcon)`
   color: black !important;
 `;
 
-export const ButtonFavorite = styled(FavoriteIcon)`
+export const ButtonDrive = styled(DriveEtaIcon)`
   padding: 1vw !important;
   color: black !important;
 `;

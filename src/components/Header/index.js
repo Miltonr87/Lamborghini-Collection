@@ -10,7 +10,7 @@ import {
 } from "./Header";
 import { Link, useHistory } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
-import LamborghiniLogo from "../../assets/Logo/lamborghini2.png";
+import LamborghiniLogo from "../../assets/Logo/lamborghini.png";
 
 const Header = ({ backButton }) => {
   const history = useHistory();

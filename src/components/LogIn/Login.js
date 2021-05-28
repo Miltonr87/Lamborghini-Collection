@@ -24,7 +24,6 @@ export const LoginInput = styled.input`
   background-color: rgba(252, 252, 252, 0.2);
   width: 250px;
   border-radius: 15px;
-  font-family: "Source Sans Pro", sans-serif;
   padding: 10px 15px;
   margin: 0 auto 10px auto;
   display: block;
@@ -57,7 +56,7 @@ export const Signature = styled.footer`
   width: 100%;
   height: 2.5rem;
   font-style: italic;
-
+  
   @media screen and (max-width: 1000px) {
     border-top: 2px solid black;
   }

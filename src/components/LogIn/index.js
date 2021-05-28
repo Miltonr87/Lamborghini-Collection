@@ -19,6 +19,7 @@ const Login = () => {
       <h2>
         Welcome {contact.username}! <br />
       </h2>
+      <br />
       <Link to="/home">
         <VideoBg
           autoPlay
@@ -68,6 +69,7 @@ const Login = () => {
         {welcome}
       </form>
       <Signature>
+        <br />
         <p> © Milton Rodrigues - {date} </p>
       </Signature>
     </LoginContainer>

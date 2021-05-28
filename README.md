@@ -4,9 +4,12 @@
 
 [X] Mobile version
 
+_* **### V2 (05-28-2021)**
+Added **Roar Engine** and **Dark Mode**.
+
 ### About
 
-Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 12 outstanding car images. The idea was to recreate an atmosphere produced by apps like **Tinder** with **Top Trumps** games for cars. So, users can interact with all card deck. A special **ChatArea** with the creator of the Lamborghini brand and a **Login System** were also added to the project. 
+Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 12 outstanding car images. The idea was to recreate an atmosphere produced by apps like **Tinder** and card games like **Top Trumps** for cars. So, users can interact with all card deck. A special **ChatArea** with the creator of the Lamborghini brand, a **Login System** were also added to the project. 
 
 _* **ATTENTION**: This project was changed after the first version to avoid controversy. The author only uses the Lamborghini brand (all images and logos copyrights) as a proposal of studies in React. The author is not responsible for any improper use of the brand or app!*_
 
@@ -21,8 +24,9 @@ As you see, **Lamborghini Collection** runs on [Node.js](https://nodejs.org/), s
 
 ### Additional packages
 - [React Tinder Card](https://github.com/3DJakob/react-tinder-card) (To swipe Left and Right cards)
+- [React Spring](https://reactrouter.com/) (Animation library for Modals)
 - [React Router](https://reactrouter.com/) (React Component Pattern)
-- [React Sound](https://www.npmjs.com/package/react-sound) (To manage sound on components)
+- [React Sound](https://www.npmjs.com/package/react-sound) (To manage sound on Components)
 - [Styled Components](https://github.com/styled-components/styled-components) (Used to increase performance CSS-In-JS)
 - [FireBase](https://firebase.google.com/) (To store cars covers on the FireStore Cloud)
 - [Material UI](https://material-ui.com/pt/) (To ensure the closest design to Tinder)
@@ -30,6 +34,10 @@ As you see, **Lamborghini Collection** runs on [Node.js](https://nodejs.org/), s
 ### App Sound
 
 [Motivational Hopeful Travel by Alex Productions](https://www.free-stock-music.com/alex-productions-motivational-hopeful-travel-home.html)
+
+### Images and Videos
+
+All car content was reproduced from [Pinterest](https://br.pinterest.com/) database.
 
 ### Live Demo 
 

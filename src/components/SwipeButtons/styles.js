@@ -3,7 +3,7 @@ import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/AttachMoney";
 import StarRateIcon from "@material-ui/icons/LocalCarWash";
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
-import FlashOnIcon from "@material-ui/icons/EvStation";
+import SettingsRemoteIcon from '@material-ui/icons/SettingsRemote';
 
 export const Swipe = styled.div`
   position: fixed;
@@ -14,8 +14,8 @@ export const Swipe = styled.div`
   
 
   .MuiIconButton-root {
-    background-color: yellow;
-    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.7) !important;
+    color: ${({ theme }) => theme.text};
+    box-shadow: 0px 10px 53px 0px ${({ theme }) => theme.text} !important;
   }
 
   @media screen and (max-width: 760px) {
@@ -26,27 +26,27 @@ export const Swipe = styled.div`
 
 export const ButtonRepeat = styled(ReplayIcon)`
   padding: 1vw !important;
-  color: black!important;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ButtonClose = styled(CloseIcon)`
   padding: 1vw !important;
-  color: black !important;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ButtonStar = styled(StarRateIcon)`
   padding: 1vw !important;
-  color: black !important;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ButtonDrive = styled(DriveEtaIcon)`
   padding: 1vw !important;
-  color: black !important;
+  color: ${({ theme }) => theme.text};
 `;
 
-export const ButtonFlash = styled(FlashOnIcon)`
+export const ButtonSettings = styled(SettingsRemoteIcon)`
   padding: 1vw !important;
-  color: black !important;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ModalButton = styled.button`

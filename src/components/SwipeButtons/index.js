@@ -6,11 +6,11 @@ import {
   ButtonClose,
   ButtonStar,
   ButtonDrive,
-  ButtonFlash,
-} from "./SwipeButtons";
+  ButtonSettings,
+} from "./styles";
 import DriveModal from './DriveModal';
 
-const SwipeButtons = () => {
+const SwipeButtons = ({toggleTheme}) => {
   const [ showModal, setShowModal ] = useState(false);
   const openModal = () => {
     setShowModal(prev => !prev)
@@ -45,8 +45,8 @@ const SwipeButtons = () => {
         />
       </IconButton>
       <IconButton>
-        <ButtonFlash
-          onClick={() => alert("⛽ FUEL ⛽")}
+        <ButtonSettings
+          onClick={toggleTheme}
           fontSize="large"
         />
       </IconButton>

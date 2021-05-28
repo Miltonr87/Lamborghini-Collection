@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import {
   ModalBackground,
   ModalWrapper,
-  ModalVid,
+  ModalMedia,
   ModalContent,
   ModalButton,
 } from "./styles";
@@ -57,7 +57,7 @@ const FavoriteModal = ({ showModal, setShowModal }) => {
         <ModalBackground ref={modalRef} onClick={closeModal}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalVid
+              <ModalMedia
                 id="carAudio"
                 autoPlay
                 loop
@@ -66,7 +66,7 @@ const FavoriteModal = ({ showModal, setShowModal }) => {
                 type="video/mp4"
               />
               <ModalContent>
-                <h1> Are you ready?</h1>
+                <h1> Engine's Roar </h1>
                 <ModalButton onClick={setFullVolume} type="button">
                   <FullVolumeIcon />
                 </ModalButton>

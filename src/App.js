@@ -1,5 +1,7 @@
-import React from "react";
-import { createGlobalStyle } from "styled-components";
+import React, { useState } from "react";
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './styles/theme';
+import { GlobalStyles } from "./styles";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LogIn from "./components/LogIn";
 import Header from "./components/Header";
@@ -8,26 +10,22 @@ import SwipeButtons from "./components/SwipeButtons";
 import ChatRoom from "./components/ChatRoom";
 import ChatScreen from "./components/ChatRoom/ChatScreen";
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-  }
 
-  body {
-    color: black;
-    background-color: #ffdd00;
-    font-weight: 300;
-    width: 100%;
-    height: 100%;
-  }
-`;
 
 function App() {
+  const [ theme, setTheme ] = useState('light');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
+
   return (
-    <>
-      <GlobalStyle />
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <>
+      <GlobalStyles/>
       <BrowserRouter>
         <Switch>
           <Route path="/chat/:person">
@@ -41,7 +39,7 @@ function App() {
           <Route path="/home">
             <Header />
             <LamborghiniCards />
-            <SwipeButtons />
+            <SwipeButtons toggleTheme={toggleTheme} />
           </Route>
           <Route exact path="/">
             <LogIn />
@@ -49,6 +47,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </>
+    </ThemeProvider>
   );
 }
 

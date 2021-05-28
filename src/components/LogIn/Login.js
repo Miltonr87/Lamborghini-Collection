@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LoginContainer = styled.div`
   padding: 80px 0;
   text-align: center;
-
+  
   @media screen and (max-width: 1000px) {
     margin: 20px;
   }
@@ -30,17 +30,17 @@ export const LoginInput = styled.input`
   display: block;
   text-align: center;
   font-size: 18px;
-  color: black;
+  color: ${({ theme }) => theme.text};
   font-weight: 300;
 `;
 
 export const ButtonConfirm = styled.button`
   cursor: pointer;
   appearance: none;
-  background: #141414;
+  background: ${({ theme }) => theme.text};
   border: 0;
   padding: 10px 15px;
-  color: white;
+  color: ${({ theme }) => theme.body};
   border-radius: 15px;
   width: 250px;
   font-size: 18px;

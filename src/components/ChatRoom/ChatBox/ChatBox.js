@@ -8,25 +8,26 @@ export const ChatList = styled.div`
   justify-content: space-between;
   padding: 20px;
   height: 70px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid ${({ theme }) => theme.text};
 `;
 
 export const ChatLink = styled(Link)`
   text-decoration: none;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ChatAvatar = styled(Avatar)`
   margin-right: 20px;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ChatDetails = styled.div`
   flex: 1;
   .p {
-    color: black;
+    color: ${({ theme }) => theme.text};
   }
 `;
 
 export const ChatTime = styled.p`
-  color: black;
+  color: ${({ theme }) => theme.text};
 `;

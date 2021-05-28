@@ -42,9 +42,8 @@ export const CarCards = styled.div`
 
 export const CarName = styled.h3`
   position: absolute;
-  color: black;
-  /*bottom: 1.3rem;*/
-  background-color: yellow;
+  color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.body};
   border-radius: 20px;
   padding: 8px;
 `;

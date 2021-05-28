@@ -18,8 +18,8 @@ export const ModalWrapper = styled.div`
   right: auto;
   margin-bottom: 20rem;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background-color: #ffdd00;
-  color: #000;
+  background-color: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -70,7 +70,7 @@ export const ModalWrapper = styled.div`
   }
 `;
 
-export const ModalVid = styled.video`
+export const ModalMedia = styled.video`
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
@@ -79,13 +79,17 @@ export const ModalVid = styled.video`
   object-fit: cover;
 `;
 
+export const ModalText = styled.p`
+    margin-bottom: 1rem;
+`;
+
 export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #141414;
+  color: ${({ theme }) => theme.text};
   @media screen and (max-width: 900px) {
     margin-bottom: 2rem;
   }

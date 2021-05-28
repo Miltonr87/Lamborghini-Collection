@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/AttachMoney";
-import StarRateIcon from "@material-ui/icons/LocalCarWash";
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
+import HearingIcon from '@material-ui/icons/Hearing';
 import SettingsRemoteIcon from '@material-ui/icons/SettingsRemote';
 
 export const Swipe = styled.div`
@@ -34,12 +34,12 @@ export const ButtonClose = styled(CloseIcon)`
   color: ${({ theme }) => theme.text};
 `;
 
-export const ButtonStar = styled(StarRateIcon)`
+export const ButtonCar = styled(DriveEtaIcon)`
   padding: 1vw !important;
   color: ${({ theme }) => theme.text};
 `;
 
-export const ButtonDrive = styled(DriveEtaIcon)`
+export const ButtonDrive = styled(HearingIcon)`
   padding: 1vw !important;
   color: ${({ theme }) => theme.text};
 `;

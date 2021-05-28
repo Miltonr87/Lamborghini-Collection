@@ -4,7 +4,7 @@ import {
   Swipe,
   ButtonRepeat,
   ButtonClose,
-  ButtonStar,
+  ButtonCar,
   ButtonDrive,
   ButtonSettings,
 } from "./styles";
@@ -28,7 +28,7 @@ const SwipeButtons = ({ toggleTheme }) => {
         <ButtonClose onClick={() => alert("💰 BUY 💰")} fontSize="large" />
       </IconButton>
       <IconButton>
-        <ButtonStar onClick={() => alert("🚿 WASH 🚿")} fontSize="large" />
+        <ButtonCar onClick={() => alert("🚗 PROFILE 🚗")} fontSize="large" />
       </IconButton>
       <IconButton>
         <DriveModal showModal={showModal} setShowModal={setShowModal} />

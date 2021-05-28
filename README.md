@@ -4,7 +4,7 @@
 
 [X] Mobile version
 
-_* **V2 (05-28-2021)**
+**V2 (05-28-2021):**
 Added **Roar Engine** and **Dark Mode**.
 
 ### About

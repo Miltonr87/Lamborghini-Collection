@@ -8,12 +8,12 @@ import {
   ButtonDrive,
   ButtonSettings,
 } from "./styles";
-import DriveModal from './DriveModal';
+import DriveModal from "./DriveModal";
 
-const SwipeButtons = ({toggleTheme}) => {
-  const [ showModal, setShowModal ] = useState(false);
+const SwipeButtons = ({ toggleTheme }) => {
+  const [showModal, setShowModal] = useState(false);
   const openModal = () => {
-    setShowModal(prev => !prev)
+    setShowModal((prev) => !prev);
   };
 
   return (
@@ -25,30 +25,17 @@ const SwipeButtons = ({toggleTheme}) => {
         />
       </IconButton>
       <IconButton>
-        <ButtonClose
-          onClick={() => alert("💰 BUY 💰")}
-          fontSize="large"
-        />
+        <ButtonClose onClick={() => alert("💰 BUY 💰")} fontSize="large" />
       </IconButton>
       <IconButton>
-        <ButtonStar
-          onClick={() => alert("🚿 WASH 🚿")}
-          fontSize="large"
-        />
+        <ButtonStar onClick={() => alert("🚿 WASH 🚿")} fontSize="large" />
       </IconButton>
       <IconButton>
-      <DriveModal showModal={showModal} setShowModal={setShowModal} />
-        <ButtonDrive
-          onClick={openModal}
-          fontSize="large"
-          alt="Drive"
-        />
+        <DriveModal showModal={showModal} setShowModal={setShowModal} />
+        <ButtonDrive onClick={openModal} fontSize="large" alt="Drive" />
       </IconButton>
       <IconButton>
-        <ButtonSettings
-          onClick={toggleTheme}
-          fontSize="large"
-        />
+        <ButtonSettings onClick={toggleTheme} fontSize="large" />
       </IconButton>
     </Swipe>
   );

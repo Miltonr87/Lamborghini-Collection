@@ -3,7 +3,7 @@ import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/AttachMoney";
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
 import HearingIcon from '@material-ui/icons/Hearing';
-import SettingsRemoteIcon from '@material-ui/icons/SettingsRemote';
+import HighlightIcon from '@material-ui/icons/Highlight';
 
 export const Swipe = styled.div`
   position: fixed;
@@ -44,7 +44,7 @@ export const ButtonDrive = styled(HearingIcon)`
   color: ${({ theme }) => theme.text};
 `;
 
-export const ButtonSettings = styled(SettingsRemoteIcon)`
+export const ButtonSettings = styled(HighlightIcon)`
   padding: 1vw !important;
   color: ${({ theme }) => theme.text};
 `;

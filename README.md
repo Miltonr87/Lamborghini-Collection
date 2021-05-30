@@ -4,10 +4,11 @@
 
 [X] Mobile version
 
+[X] Desktop version
 
 ### About
 
-Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 12 outstanding car images. The idea was to recreate an atmosphere produced by apps like **Tinder** and card games like **Top Trumps** for cars. So, users can interact with all card deck. A special **ChatArea** with the creator of the Lamborghini brand, a **Login System** were also added to the project. 
+Made with **React** and **Mobile First techniques**, the Web APP consumes an **FireBase API** created with 12 outstanding car images. The idea was to recreate an atmosphere produced card games like **Top Trumps** for cars. So, users can interact with all card deck. A special **ChatArea** with the creator of the Lamborghini brand, a **Login System** were also added to the project. 
 
 _* **ATTENTION**: This project was changed after the first version to avoid controversy. The author only uses the Lamborghini brand (all images and logos copyrights) as a proposal of studies in React. The author is not responsible for any improper use of the brand or app!*_
 

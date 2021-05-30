@@ -4,8 +4,6 @@
 
 [X] Mobile version
 
-**V2 (05-28-2021):**
-Added **Roar Engine** and **Dark Mode**.
 
 ### About
 
@@ -41,8 +39,7 @@ All car content was reproduced from [Pinterest](https://br.pinterest.com/) datab
 
 ### Live Demo 
 
-- [Lamborghini V1](http://lamborghini-collection.vercel.app)
-- [Lamborghini V2](https://lamborghini-collection2.vercel.app/)
+- [LIVE DEMO](https://lamborghini-collection2.vercel.app/)
 
 #### License
 

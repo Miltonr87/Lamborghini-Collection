@@ -5,7 +5,7 @@ import {
   LoginInput,
   ButtonConfirm,
   Signature,
-} from "./Login";
+} from "./styles";
 import LamborghiniLogo from "../../assets/Logo/Lamborghini-Logo.png";
 import LamborghiniLogged from "../../assets/Media/lamborghini.mp4";
 import { Link } from "react-router-dom";

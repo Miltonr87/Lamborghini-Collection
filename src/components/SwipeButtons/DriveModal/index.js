@@ -7,33 +7,33 @@ import {
   ModalContent,
   ModalButton,
 } from "./styles";
-import Driving from "../../../assets/Modal/driving.mp4";
+import Driving from "../../../assets/Media/driving.mp4";
 import FullVolumeIcon from "./FullVolumeIcon";
 import HalfVolumeIcon from "./HalfVolumeIcon";
 
-const FavoriteModal = ({ showModal, setShowModal }) => {
+const DriveModal = ({ driveModal, setDriveModal }) => {
   const modalRef = useRef();
   const animation = useSpring({
     config: {
       duration: 250,
     },
-    opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0%)` : `translateY(-100%)`,
+    opacity: driveModal ? 1 : 0,
+    transform: driveModal ? `translateY(0%)` : `translateY(-100%)`,
   });
 
   const closeModal = (e) => {
     if (modalRef.current === e.target) {
-      setShowModal(false);
+      setDriveModal(false);
     }
   };
 
   const keyPress = useCallback(
     (e) => {
-      if (e.key === "Escape" && showModal) {
-        setShowModal(false);
+      if (e.key === "Escape" && driveModal) {
+        setDriveModal(false);
       }
     },
-    [setShowModal, showModal]
+    [setDriveModal, driveModal]
   );
 
   const setHalfVolume = () => {
@@ -53,20 +53,20 @@ const FavoriteModal = ({ showModal, setShowModal }) => {
 
   return (
     <>
-      {showModal ? (
+      {driveModal ? (
         <ModalBackground ref={modalRef} onClick={closeModal}>
           <animated.div style={animation}>
-            <ModalWrapper showModal={showModal}>
+            <ModalWrapper showModal={driveModal}>
               <ModalMedia
                 id="carAudio"
                 autoPlay
-                loop
+                loop="true"
                 src={Driving}
                 alt="Driving"
                 type="video/mp4"
               />
               <ModalContent>
-                <h1> Engine's Roar </h1>
+                <h2> Engine's Roar </h2>
                 <ModalButton onClick={setFullVolume} type="button">
                   <FullVolumeIcon />
                 </ModalButton>
@@ -82,4 +82,4 @@ const FavoriteModal = ({ showModal, setShowModal }) => {
   );
 };
 
-export default FavoriteModal;
+export default DriveModal;

@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(2),
       fontSize: "50px",
       ["@media(max-width: 480px)"]: {
-        fontSize: "33px",
+        fontSize: "25px",
       },
     },
   },

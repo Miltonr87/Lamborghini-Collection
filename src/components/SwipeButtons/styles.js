@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/AttachMoney";
-import DriveEtaIcon from '@material-ui/icons/DriveEta';
-import HearingIcon from '@material-ui/icons/Hearing';
-import HighlightIcon from '@material-ui/icons/Highlight';
+import DriveEtaIcon from "@material-ui/icons/DriveEta";
+import HearingIcon from "@material-ui/icons/Hearing";
+import HighlightIcon from "@material-ui/icons/Highlight";
 
 export const Swipe = styled.div`
   position: fixed;
@@ -11,7 +11,6 @@ export const Swipe = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  
 
   .MuiIconButton-root {
     color: ${({ theme }) => theme.text};

@@ -7,10 +7,10 @@ import {
   IconPerson,
   IconChat,
   IconReturn,
-} from "./Header";
+} from "./styles";
 import { Link, useHistory } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
-import LamborghiniLogo from "../../assets/Logo/lamborghini.png";
+import LamborghiniLogo from "../../assets/Logo/LogoAnimated.gif";
 
 const Header = ({ backButton }) => {
   const history = useHistory();
@@ -22,6 +22,7 @@ const Header = ({ backButton }) => {
         playStatus={Sound.status.PLAYING}
         playFromPosition={100}
         autoLoad={true}
+        loop={true}
       />
       <HeaderContainer>
         {backButton ? (

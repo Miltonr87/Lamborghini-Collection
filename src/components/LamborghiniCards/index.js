@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import database from "../Firebase/firebase";
-import { CardContainer, CarsDeck, CarCards, CarName } from "./LamborghiniCards";
+import { CardContainer, CarsDeck, CarCards, CarName } from "./styles";
 
 function LamborghiniCards() {
   const [lamborghini, setLamborghini] = useState([]);

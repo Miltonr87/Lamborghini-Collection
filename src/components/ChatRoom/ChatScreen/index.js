@@ -8,10 +8,9 @@ import {
   InputChat,
   InputField,
   InputButton,
-} from "./ChatScreen";
+} from "./styles";
 
 function ChatScreen() {
-  const date = new Date().getFullYear();
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
@@ -19,7 +18,14 @@ function ChatScreen() {
       image:
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-Nxg9cXaBtQ4%2FTzrSYWUNcmI%2FAAAAAAAAAGg%2F0-KDzkb9pwg%2Fs1600%2Fferruccio.jpeg&f=1&nofb=1",
       message:
-        "Ferrari never spoke to me again. He was a great man, I admit, but it was so very easy to upset him.",
+        "Lamborghini is refinement, luxury and perfection!",
+    },
+    {
+      name: "Ferruccio Lamborghini",
+      image:
+        "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-Nxg9cXaBtQ4%2FTzrSYWUNcmI%2FAAAAAAAAAGg%2F0-KDzkb9pwg%2Fs1600%2Fferruccio.jpeg&f=1&nofb=1",
+      message:
+        "Enzo Ferrari never spoke to me again. He was a great man, I admit, but it was so very easy to upset him.",
     }
   ]);
 
@@ -32,7 +38,7 @@ function ChatScreen() {
 
   return (
     <div>
-      <ChatTime> FERRUCIO LAMBORGHINI ON {date}</ChatTime>
+      <ChatTime> FERRUCIO LAMBORGHINI ON 1970</ChatTime>
       {messages.map((message) =>
         message.name ? (
           <div>

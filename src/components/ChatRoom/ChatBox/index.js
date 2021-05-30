@@ -5,7 +5,7 @@ import {
   ChatAvatar,
   ChatDetails,
   ChatTime,
-} from "./ChatBox";
+} from "./styles";
 
 const ChatBox = ({ name, time, profilePic }) => {
   return (

@@ -12,9 +12,8 @@ export const ModalBackground = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 30%;
-  height: 100%;
-
+  max-width: 80%;
+  max-height: 50%;
   margin-bottom: 20rem;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.body};
@@ -24,32 +23,32 @@ export const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
-  // Motorola and Samsung
+  // Motorola, Samsung, Iphone 6/7/8
   @media screen and (max-width: 480px) {
     width: 32%;
     margin-left: 57.3vh;
     margin-bottom: 35rem;
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
   // Iphone X
   @media screen and (min-height: 812px) {
     width: 32%;
     margin-left: 47vh;
     margin-bottom: 45rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   // Ipad
   @media screen and (min-width: 481px) {
     width: 30%;
     left: 300px;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
   // Ipad Pro
   @media screen and (min-width: 813px) {
     width: 30%;
     margin-left: 57vh;
     margin-bottom: 55rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   // Desktops...
   @media screen and (min-width: 1300px) {
@@ -76,6 +75,7 @@ export const ModalImg = styled.img`
 
 export const ModalText = styled.p`
     padding: 15px;
+    align-items: center;
     text-align: justify;
 `;
 

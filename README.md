@@ -40,7 +40,7 @@ All car content was reproduced from [Pinterest](https://br.pinterest.com/) datab
 
 ### Live Demo 
 
-- [LIVE DEMO](https://lamborghini-collectionv2.vercel.app/)
+- [LIVE DEMO](https://lamborghini-collection.vercel.app/)
 
 #### License
 

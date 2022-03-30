@@ -1,15 +1,15 @@
-import React, { useRef, useEffect, useCallback } from "react";
-import { useSpring, animated } from "react-spring";
+import React, { useRef, useEffect, useCallback } from 'react';
+import { useSpring, animated } from 'react-spring';
 import {
   ModalBackground,
   ModalWrapper,
   ModalMedia,
   ModalContent,
   ModalButton,
-} from "./styles";
-import Driving from "../../../assets/Media/driving.mp4";
-import FullVolumeIcon from "./FullVolumeIcon";
-import HalfVolumeIcon from "./HalfVolumeIcon";
+} from './styles';
+import Driving from '../../../assets/Media/driving.mp4';
+import FullVolumeIcon from './FullVolumeIcon';
+import HalfVolumeIcon from './HalfVolumeIcon';
 
 const DriveModal = ({ driveModal, setDriveModal }) => {
   const modalRef = useRef();
@@ -29,7 +29,7 @@ const DriveModal = ({ driveModal, setDriveModal }) => {
 
   const keyPress = useCallback(
     (e) => {
-      if (e.key === "Escape" && driveModal) {
+      if (e.key === 'Escape' && driveModal) {
         setDriveModal(false);
       }
     },
@@ -37,18 +37,18 @@ const DriveModal = ({ driveModal, setDriveModal }) => {
   );
 
   const setHalfVolume = () => {
-    let vid = document.getElementById("carAudio");
-    vid.volume = 0.4;
+    let vid = document.getElementById('carAudio');
+    vid.volume = 0.2;
   };
 
   const setFullVolume = () => {
-    let vid = document.getElementById("carAudio");
+    let vid = document.getElementById('carAudio');
     vid.volume = 1.0;
   };
 
   useEffect(() => {
-    document.addEventListener("keydown", keyPress);
-    return () => document.removeEventListener("keydown", keyPress);
+    document.addEventListener('keydown', keyPress);
+    return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
   return (

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import IconButton from "@material-ui/core/IconButton";
+import React, { useState } from 'react';
+import IconButton from '@material-ui/core/IconButton';
 import {
   Swipe,
   ButtonRepeat,
@@ -7,9 +7,9 @@ import {
   ButtonCar,
   ButtonDrive,
   ButtonSettings,
-} from "./styles";
-import DriveModal from "./DriveModal";
-import HistoryModal from "./HistoryModal";
+} from './styles';
+import DriveModal from './DriveModal';
+import HistoryModal from './HistoryModal';
 
 const SwipeButtons = ({ toggleTheme }) => {
   const [driveModal, setDriveModal] = useState(false);
@@ -21,6 +21,11 @@ const SwipeButtons = ({ toggleTheme }) => {
     setHistoryModal((prev) => !prev);
   };
 
+  const lamborghiniPage = (e) => {
+    e.preventDefault();
+    window.location.href = 'https://www.lamborghini.com/';
+  };
+
   return (
     <Swipe>
       <IconButton>
@@ -30,7 +35,7 @@ const SwipeButtons = ({ toggleTheme }) => {
         />
       </IconButton>
       <IconButton>
-        <ButtonClose onClick={() => alert("💰 BUY 💰")} fontSize="large" />
+        <ButtonClose onClick={lamborghiniPage} fontSize="large" />
       </IconButton>
       <IconButton>
         <HistoryModal

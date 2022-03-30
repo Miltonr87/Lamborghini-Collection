@@ -1,15 +1,16 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { yellow } from "@material-ui/core/colors";
-import Icon from "@material-ui/core/Icon";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { yellow } from '@material-ui/core/colors';
+import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& > span": {
+    '& > span': {
       margin: theme.spacing(2),
-      fontSize: "50px",
-      ["@media(max-width: 480px)"]: {
-        fontSize: "25px",
+      fontSize: '50px',
+      // eslint-disable-next-line no-useless-computed-key
+      ['@media(max-width: 480px)']: {
+        fontSize: '25px',
       },
     },
   },

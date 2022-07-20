@@ -1,13 +1,13 @@
-import React, { useRef, useEffect, useCallback } from "react";
-import { useSpring, animated } from "react-spring";
+import React, { useRef, useEffect, useCallback } from 'react';
+import { useSpring, animated } from 'react-spring';
 import {
   ModalBackground,
   ModalWrapper,
   ModalImg,
   ModalContent,
   ModalText,
-} from "./styles";
-import Garage from "../../../assets/Images/garage.jpg";
+} from './styles';
+import Garage from '../../../assets/Images/garage.jpg';
 
 const HistoryModal = ({ historyModal, setHistoryModal }) => {
   const modalRef = useRef();
@@ -27,7 +27,7 @@ const HistoryModal = ({ historyModal, setHistoryModal }) => {
 
   const keyPress = useCallback(
     (e) => {
-      if (e.key === "Escape" && historyModal) {
+      if (e.key === 'Escape' && historyModal) {
         setHistoryModal(false);
       }
     },
@@ -35,8 +35,8 @@ const HistoryModal = ({ historyModal, setHistoryModal }) => {
   );
 
   useEffect(() => {
-    document.addEventListener("keydown", keyPress);
-    return () => document.removeEventListener("keydown", keyPress);
+    document.addEventListener('keydown', keyPress);
+    return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
   return (
@@ -50,10 +50,9 @@ const HistoryModal = ({ historyModal, setHistoryModal }) => {
                 <h1> Brand History </h1>
                 <ModalText>
                   Automobili Lamborghini was officially established in 1963 in
-                  Sant’Agata Bolognese, Italy. The company’s logo featured a
+                  Sant’Agata Bolognese, 🇮🇹Italy. The company’s logo featured a
                   bull, a reference to Ferruccio Lamborghini’s zodiac sign,
-                  ♉Taurus the bull. Various Lamborghini models had names related
-                  to bulls or bullfighting.
+                  Taurus the bull.
                 </ModalText>
               </ModalContent>
             </ModalWrapper>

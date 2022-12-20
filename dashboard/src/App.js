@@ -11,7 +11,7 @@ import ChatRoom from "./components/ChatRoom";
 import ChatScreen from "./components/ChatRoom/ChatScreen";
 
 function App() {
-  const [ theme, setTheme ] = useState('light');
+  const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
@@ -23,28 +23,28 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
-      <GlobalStyles/>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/chat/:person">
-            <Header backButton="/chat" />
-            <ChatScreen />
-          </Route>
-          <Route path="/chat">
-            <Header backButton="/" />
-            <ChatRoom />
-          </Route>
-          <Route path="/home">
-            <Header />
-            <LamborghiniCards />
-            <SwipeButtons toggleTheme={toggleTheme} />
-          </Route>
-          <Route exact path="/">
-            <LogIn />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-    </>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/chat/:person">
+              <Header backButton="/chat" />
+              <ChatScreen />
+            </Route>
+            <Route path="/chat">
+              <Header backButton="/" />
+              <ChatRoom />
+            </Route>
+            <Route path="/home">
+              <Header />
+              <LamborghiniCards />
+              <SwipeButtons toggleTheme={toggleTheme} />
+            </Route>
+            <Route exact path="/">
+              <LogIn />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </>
     </ThemeProvider>
   );
 }

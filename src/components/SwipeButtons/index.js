@@ -23,7 +23,7 @@ const SwipeButtons = ({ toggleTheme }) => {
 
   const lamborghiniPage = (e) => {
     e.preventDefault();
-    window.location.href = 'https://www.lamborghini.com/';
+    window.location.href = 'https://www.lamborghini.com/en-en/3d';
   };
 
   return (
